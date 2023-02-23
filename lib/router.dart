@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/constants/provider_name.dart';
 import 'package:flutter_template/presentation/top/top_page.dart';
+import 'package:flutter_template/presentation/widget_by_class/widget_by_class_page.dart';
+import 'package:flutter_template/presentation/widget_by_function/widget_by_function_page.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -25,6 +27,18 @@ final routerProvider = Provider<GoRouter>((ref) {
           return const NextPage();
         },
       ),
+      GoRoute(
+          name: kPageNameWidgetByFunction,
+          path: kPagePathWidgetByFunction,
+          builder: (BuildContext context, GoRouterState state) {
+            return WidgetByFunctionPage();
+          }),
+      GoRoute(
+          name: kPageNameWidgetByClass,
+          path: kPagePathWidgetByClass,
+          builder: (BuildContext context, GoRouterState state) {
+            return WidgetByClassPage();
+          }),
     ],
   );
 }, name: kProviderNameRouter);

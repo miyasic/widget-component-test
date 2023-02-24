@@ -1,16 +1,14 @@
-# flutter_template
+## WidgetとInstance
 
-A new Flutter project.
+StatefulWidgetのsetStateを呼んだ時にWidgetのInstanceが再生成されるかどうかの確認
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+|  Widget  |  Instance再生成  |
+| ---- | ---- |
+|  親Widget  |  しない  |
+|  親State  |  しない  |
+|  子Widget const付き  |  しない  |
+|  子Widget const無し  |  する  |
 
-A few resources to get you started if this is your first Flutter project:
+https://user-images.githubusercontent.com/62228968/221133069-8118d83f-6c34-42b1-917a-d5c71fb304f1.mov
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

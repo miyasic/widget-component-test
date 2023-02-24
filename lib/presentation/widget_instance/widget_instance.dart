@@ -31,7 +31,7 @@ class _WidgetInstancePageState extends State<WidgetInstancePage> {
                 onPressed: () {
                   setState(() {});
                 },
-                child: const Text("ビルドメソッド呼ぶ")),
+                child: const Text("setStateを呼ぶ")),
           ],
         ),
       ),

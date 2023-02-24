@@ -26,6 +26,11 @@ class TopPage extends ConsumerWidget {
                   context.push(kPagePathWidgetByFunction);
                 },
                 child: const Text(kPageNameWidgetByFunction)),
+            ElevatedButton(
+                onPressed: () {
+                  context.push(kPagePathWidgetInstance);
+                },
+                child: Text(kPageNameWidgetInstance))
           ],
         ),
       ),
